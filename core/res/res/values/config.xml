@@ -2120,7 +2120,7 @@
     <!-- Ignored sms packages -->
     <string-array name="config_ignored_sms_packages"></string-array>
 
-    <!-- Wether doze feature is enabled by default in settings. -->
-    <bool name="config_doze_enabled_by_default">false</bool>
-
+    <!-- Support in Surfaceflinger for blur layers.
+         NOTE: This requires additional hardware-specific code. -->
+    <bool name="config_ui_blur_enabled">false</bool>
 </resources>
