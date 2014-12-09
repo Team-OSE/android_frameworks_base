@@ -5118,6 +5118,14 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                             // on key down events
                             mayChangeVolume = down;
                         }
+                        if (!isWakeKey) {
+                            // If we aren't passing to the user and no one else
+                            // handled it send it to the session manager to figure
+                            // out.
+                            MediaSessionLegacyHelper.getHelper(mContext)
+                                    .sendVolumeKeyEvent(KeyEvent.changeAction(event,
+                                    KeyEvent.ACTION_DOWN), true);
+                        }
                     }
 
                     if (mayChangeVolume) {
