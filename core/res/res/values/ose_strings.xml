@@ -318,4 +318,8 @@
     <string name="usb_media_checking">USB storage is currently being checked.</string>
     <string name="usb_media_removed">USB storage has been removed.</string>
     <string name="usb_media_shared">USB storage is currently in use by a computer.</string>
+
+    <!-- Heads up -->
+    <string name="permlab_changeHeadsUpState">enable or disable heads up</string>
+    <string name="permdesc_changeHeadsUpState">Allows the application to change whether another application is allowed to show normal notifications as heads up notification.</string>
 </resources>
