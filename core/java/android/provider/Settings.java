@@ -3610,6 +3610,55 @@ public final class Settings {
         public static final String RECENTS_SHOW_HIDE_SEARCH_BAR = "recents_show_hide_search_bar";
 
         /**
+         * The number of voume steps for alarms, one of:
+         *    5, 7, 15, 30, 45, 60
+         * @hide
+         */
+        public static final String VOLUME_STEPS_ALARM = "volume_steps_alarm";
+
+        /**
+         * The number of voume steps for DTMF sounds, one of:
+         *    5, 7, 15, 30, 45, 60
+         * @hide
+         */
+        public static final String VOLUME_STEPS_DTMF = "volume_steps_dtmf";
+
+        /**
+         * The number of voume steps for music, one of:
+         *    5, 7, 15, 30, 45, 60
+         * @hide
+         */
+        public static final String VOLUME_STEPS_MUSIC = "volume_steps_music";
+
+        /**
+         * The number of voume steps for notifications, one of:
+         *    5, 7, 15, 30, 45, 60
+         * @hide
+         */
+        public static final String VOLUME_STEPS_NOTIFICATION = "volume_steps_notification";
+
+        /**
+         * The number of voume steps for the ringer, one of:
+         *    5, 7, 15, 30, 45, 60
+         * @hide
+         */
+        public static final String VOLUME_STEPS_RING = "volume_steps_ring";
+
+        /**
+         * The number of voume steps for system sounds, one of:
+         *    5, 7, 15, 30, 45, 60
+         * @hide
+         */
+        public static final String VOLUME_STEPS_SYSTEM = "volume_steps_system";
+
+        /**
+         * The number of voume steps for voice in calls, one of:
+         *    5, 7, 15, 30, 45, 60
+         * @hide
+         */
+        public static final String VOLUME_STEPS_VOICE_CALL = "volume_steps_voice_call";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -3686,7 +3735,7 @@ public final class Settings {
             STATUS_BAR_SHOW_BATTERY_PERCENT,
             INCREASING_RING,
             INCREASING_RING_START_VOLUME,
-            INCREASING_RING_RAMP_UP_TIME
+            INCREASING_RING_RAMP_UP_TIME,
         };
 
         /**
