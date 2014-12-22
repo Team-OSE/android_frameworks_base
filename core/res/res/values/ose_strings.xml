@@ -242,6 +242,9 @@
     <string name="theme_install_error_title">Failed to install theme</string>
     <string name="theme_install_error_message">%s failed to install</string>
 
+    <!-- OSESeekBar String-->
+    <string name="default_string">Default</string>
+
     <!-- AOKP custom system animations -->
     <string name="animation_fade">Fade</string>
     <string name="animation_slide_right">Slide in right</string>
