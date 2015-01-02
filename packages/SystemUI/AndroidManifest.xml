@@ -375,7 +375,7 @@
         <provider android:name=".ose.SpamMessageProvider"
                   android:permission="android.permission.INTERACT_ACROSS_USERS_FULL"
                   android:exported="true"
-                  android:authorities="com.cyanogenmod.spam" />
+                  android:authorities="com.ose.spam" />
 
     </application>
 </manifest>

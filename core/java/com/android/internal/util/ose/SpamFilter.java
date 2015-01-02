@@ -8,7 +8,7 @@ import android.text.TextUtils;
 
 public class SpamFilter {
 
-    public static final String AUTHORITY = "com.cyanogenmod.spam";
+    public static final String AUTHORITY = "com.ose.spam";
     public static final Uri NOTIFICATION_URI = new Uri.Builder()
             .scheme(ContentResolver.SCHEME_CONTENT)
             .authority(AUTHORITY)
