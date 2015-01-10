@@ -77,5 +77,4 @@ public class ActionConfig {
     public void setIcon(String iconUri) {
         mIconUri = iconUri;
     }
-
 }

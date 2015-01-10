@@ -184,6 +184,17 @@ public class StatusBarManagerService extends IStatusBarService.Stub {
     }
 
     @Override
+    public void animateNotificationsOrSettingsPanel() {
+        enforceExpandStatusBar();
+        if (mBar != null) {
+            try {
+                mBar.animateNotificationsOrSettingsPanel();
+            } catch (RemoteException WTF) {
+            }
+        }
+    }
+
+    @Override
     public void disable(int what, IBinder token, String pkg) {
         disableInternal(mCurrentUserId, what, token, pkg);
     }
@@ -384,6 +395,14 @@ public class StatusBarManagerService extends IStatusBarService.Stub {
         }
     }
 
+    public void notifyLayoutChange(int direction) {
+        if (mBar != null) {
+            try {
+                mBar.notifyLayoutChange(direction);
+            } catch (RemoteException ex) {}
+        }
+    }
+
     @Override
     public void toggleRecentApps() {
         if (mBar != null) {
@@ -458,6 +477,16 @@ public class StatusBarManagerService extends IStatusBarService.Stub {
         }
     }
 
+    @Override
+    public void setPieTriggerMask(int newMask, boolean lock) {
+        if (mBar != null) {
+            try {
+                mBar.setPieTriggerMask(newMask, lock);
+            } catch (RemoteException ex) {}
+        }
+    }
+
+    @Override
     private void enforceStatusBar() {
         mContext.enforceCallingOrSelfPermission(android.Manifest.permission.STATUS_BAR,
                 "StatusBarManagerService");
