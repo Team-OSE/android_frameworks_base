@@ -136,7 +136,7 @@ public class PlatLogoActivity extends Activity {
         im.setScaleX(0);
         im.setScaleY(0);
         final Drawable platlogo = getDrawable(mIsCM
-                ? com.android.internal.R.drawable.cm_platlogo
+                ? com.android.internal.R.drawable.ose_platlogo
                 : com.android.internal.R.drawable.platlogo);
         platlogo.setAlpha(0);
         im.setImageDrawable(platlogo);

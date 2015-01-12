@@ -1,7 +1,7 @@
-package com.android.systemui.cm;
+package com.android.systemui.ose;
 
-import com.android.internal.util.cm.SpamFilter.SpamContract.NotificationTable;
-import com.android.internal.util.cm.SpamFilter.SpamContract.PackageTable;
+import com.android.internal.util.ose.SpamFilter.SpamContract.NotificationTable;
+import com.android.internal.util.ose.SpamFilter.SpamContract.PackageTable;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

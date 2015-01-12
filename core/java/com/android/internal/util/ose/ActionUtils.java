@@ -1,4 +1,4 @@
-package com.android.internal.util.cm;
+package com.android.internal.util.ose;
 
 import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
