@@ -74,7 +74,7 @@ import android.telecom.TelecomManager;
 import android.service.gesture.EdgeGestureManager;
 import com.android.internal.os.DeviceKeyHandler;
 
-import com.android.internal.util.cm.ActionUtils;
+import com.android.internal.util.ose.ActionUtils;
 import dalvik.system.DexClassLoader;
 import android.util.DisplayMetrics;
 import android.util.EventLog;

@@ -1,4 +1,4 @@
-package com.android.systemui.cm;
+package com.android.systemui.ose;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -10,9 +10,9 @@ import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
 
-import com.android.internal.util.cm.SpamFilter;
-import com.android.internal.util.cm.SpamFilter.SpamContract.PackageTable;
-import com.android.internal.util.cm.SpamFilter.SpamContract.NotificationTable;
+import com.android.internal.util.ose.SpamFilter;
+import com.android.internal.util.ose.SpamFilter.SpamContract.PackageTable;
+import com.android.internal.util.ose.SpamFilter.SpamContract.NotificationTable;
 
 public class SpamMessageProvider extends ContentProvider {
     public static final String AUTHORITY = SpamFilter.AUTHORITY;
