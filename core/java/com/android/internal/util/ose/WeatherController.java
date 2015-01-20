@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.systemui.statusbar.policy;
+package com.android.internal.util.ose;
+
+import android.graphics.drawable.Drawable;
 
 public interface WeatherController {
     void addCallback(Callback callback);
@@ -28,5 +30,7 @@ public interface WeatherController {
         public String temp = null;
         public String city = null;
         public String condition = null;
+        public int conditionCode = 0;
+        public Drawable conditionDrawable = null;
     }
 }
