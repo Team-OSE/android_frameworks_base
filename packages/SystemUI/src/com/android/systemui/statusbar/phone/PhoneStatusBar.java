@@ -477,7 +477,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                             mContext.getResources().getInteger(
                             R.integer.heads_up_notification_decay),
                             UserHandle.USER_CURRENT);
-                    resetHeadsUpDecayTimer();2)
+                    resetHeadsUpDecayTimer();
             }
             update();
         }

@@ -334,14 +334,7 @@ public class HeadsUpNotificationView extends FrameLayout implements SwipeHelper.
     @Override
     public void onChildDismissed(View v, boolean direction) {
         if (DEBUG)  Log.v(TAG, "User swiped heads up to dismiss");
-<<<<<<< HEAD
         mBar.onHeadsUpDismissed(DIRECTION_X);
-        if (mSnoozeButton != null) {
-            mSnoozeButton.animate().cancel();
-        }
-=======
-        mBar.onHeadsUpDismissed(direction);
->>>>>>> 3fb5b12... Heads Up Snooze function changes [1/2]
     }
 
     @Override
