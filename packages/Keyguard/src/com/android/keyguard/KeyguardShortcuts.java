@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Slimroms
+ * Copyright (C) 2014 OSE
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,10 +31,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.android.internal.util.slim.AppHelper;
-import com.android.internal.util.slim.ActionHelper;
-import com.android.internal.util.slim.ActionConfig;
-import com.android.internal.util.slim.Action;
+import com.android.internal.util.ose.AppHelper;
+import com.android.internal.util.ose.ActionHelper;
+import com.android.internal.util.ose.ActionConfig;
+import com.android.internal.util.ose.Action;
 import com.android.internal.widget.LockPatternUtils;
 
 import com.android.keyguard.R;
