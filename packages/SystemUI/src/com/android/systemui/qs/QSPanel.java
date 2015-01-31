@@ -123,7 +123,7 @@ public class QSPanel extends ViewGroup {
     private boolean showBrightnessSlider() {
         boolean brightnessSliderEnabled = Settings.Secure.getInt(
             mContext.getContentResolver(), Settings.Secure.QS_SHOW_BRIGHTNESS_SLIDER,
-                1) == 1;
+                0) == 1;
         ToggleSlider brightnessSlider = (ToggleSlider) findViewById(R.id.brightness_slider);
         if (brightnessSliderEnabled) {
             mBrightnessView.setVisibility(VISIBLE);
@@ -227,7 +227,7 @@ public class QSPanel extends ViewGroup {
 
     private void refreshAllTiles() {
         mUseMainTiles = Settings.Secure.getInt(getContext().getContentResolver(),
-                Settings.Secure.QS_USE_MAIN_TILES, 1) == 1;
+                Settings.Secure.QS_USE_MAIN_TILES, 0) == 1;
         for (int i = 0; i < mRecords.size(); i++) {
             TileRecord r = mRecords.get(i);
             r.tileView.setDual(mUseMainTiles && i < 2);

@@ -85,7 +85,7 @@ public class DeviceUtils {
     }
 
     public static boolean adbEnabled(ContentResolver resolver) {
-            return (Settings.Global.getInt(resolver, Settings.Global.ADB_ENABLED, 0)) == 1;
+            return (Settings.Global.getInt(resolver, Settings.Global.ADB_ENABLED, 1)) == 1;
     }
 
     public static boolean deviceSupportsVibrator(Context ctx) {

@@ -193,7 +193,7 @@ public class LocationControllerImpl extends BroadcastReceiver implements Locatio
      */
     public boolean isAdvancedSettingsEnabled() {
         return Settings.Secure.getIntForUser(mContext.getContentResolver(),
-                Settings.Secure.QS_LOCATION_ADVANCED, 0, ActivityManager.getCurrentUser()) == 1;
+                Settings.Secure.QS_LOCATION_ADVANCED, 1, ActivityManager.getCurrentUser()) == 1;
     }
 
     /**
