@@ -82,6 +82,8 @@
     <java-symbol type="anim" name="slide_in_left_no_fade" />
     <java-symbol type="anim" name="slide_out_right_no_fade" />
 
+    <java-symbol type="bool" name="config_doze_enabled_by_default" />
+
     <java-symbol type="id" name="permission_text" />
     <java-symbol type="id" name="permission_remember_layout" />
     <java-symbol type="id" name="permission_remember_choice_checkbox" />
