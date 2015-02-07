@@ -21,6 +21,10 @@
          frameworks/base/core/res/MakeJavaSymbols.sed for how to easily generate
          this.
     -->
+
+    <!-- Ambient display -->
+    <java-symbol type="bool" name="config_dozeUseAccelerometer" />
+
     <!-- Toast animation -->
     <java-symbol type="style" name="Animation.Toast.Fade" />
     <java-symbol type="style" name="Animation.Toast.SlideRight" />
