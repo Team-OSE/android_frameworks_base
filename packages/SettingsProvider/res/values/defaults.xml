@@ -17,6 +17,9 @@
  */
 -->
 <resources>
+    <!-- Default for Settings.Global.TETHER_DUN_REQUIRED -->
+    <integer name="def_tether_dun_required">0</integer>
+	
     <bool name="def_dim_screen">true</bool>
     <integer name="def_screen_off_timeout">60000</integer>
     <integer name="def_sleep_timeout">-1</integer>
@@ -237,6 +240,6 @@
     <!-- Default protected sms originating address values of Settings.Secure.PROTECTED_SMS_ADDRESSES -->
     <string-array name="def_protected_sms_list_values"></string-array>
 
-    <!-- Default for Settings.Global.TETHER_DUN_REQUIRED -->
-    <integer name="def_tether_dun_required">0</integer>
+    <!-- Defaults for Settings.System.Secure.ADVANCED_MODE. -->
+    <bool name="def_advanced_mode">true</bool>
 </resources>
