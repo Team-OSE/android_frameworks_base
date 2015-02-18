@@ -2136,4 +2136,10 @@
 
     <!-- Boolean to enable adb by default on a per-device basis -->
     <bool name="config_enableAdbByDefault">true</bool>
+
+    <!-- Default values for display color temperature -->
+    <integer name="config_dayColorTemperature">6500</integer>
+    <integer name="config_nightColorTemperature">4500</integer>
+    <integer name="config_outdoorAmbientLux">9000</integer>
+
 </resources>
