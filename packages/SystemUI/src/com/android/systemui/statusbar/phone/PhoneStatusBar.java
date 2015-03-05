@@ -414,7 +414,6 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         }
     };
 
-    class SettingsObserver extends ContentObserver {
     // Custom Recents Long Press
     // - Tracks Event state for custom (user-configurable) Long Presses.
     private boolean mCustomRecentsLongPressed = false;
@@ -423,7 +422,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
     // - The custom Recents Long Press, if selected.  When null, use default (switch last app).
     private ComponentName mCustomRecentsLongPressHandler = null;
 
-    class SettingsObserver extends UserContentObserver {
+    class SettingsObserver extends ContentObserver {
         SettingsObserver(Handler handler) {
             super(handler);
         }
@@ -435,9 +434,9 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.SCREEN_BRIGHTNESS_MODE), false, this);
             resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.BATTERY_SAVER_MODE_COLOR),
-                    false, this, UserHandle.USER_ALL);
-                    Settings.System.NAVBAR_LEFT_IN_LANDSCAPE), false, this, UserHandle.USER_ALL);
+                    Settings.System.BATTERY_SAVER_MODE_COLOR), false, this);
+            resolver.registerContentObserver(Settings.Secure.getUriFor(
+                    Settings.System.NAVBAR_LEFT_IN_LANDSCAPE), false, this);
             resolver.registerContentObserver(Settings.Secure.getUriFor(
                     Settings.Secure.RECENTS_LONG_PRESS_ACTIVITY), false, this);
             update();
